@@ -5,9 +5,8 @@
   "main": "app.ts",
   "scripts": {
     "build": "tsc",
-    "dev": "ts-node-dev --respawn --transpileOnly ./src/app.ts",
-    "debug": "ts-node-dev --inspect=9230 --respawn --debug ./src/app.ts",
-    "test": "ts-node-dev --inspect=9231 --respawn --debug ./test/app.ts",
+    "dev": "ts-node-dev --respawn --transpileOnly ./lib/index.ts",
+    "debug": "ts-node-dev --inspect=9230 --respawn --debug ./test/app.ts",
     "restart": "rimraf dist && npm run build && npm start",
     "start": "node ./dist/app.js",
     "prod": "npm run build && npm run start"
